@@ -12,8 +12,10 @@ sudo apt update
 sudo apt install gpiod
 ```
 * Copy files to raspberry
+* Make files executable
+ ``` chmod +x fancontrol.sh ```
 * Add to cronjob by:
-  * ```crontab -e```  
+  * ```sudo crontab -e```  
   at the end of file attach
   * ```@reboot /path/to/your/file/fancontrol.sh```
 *  reboot
